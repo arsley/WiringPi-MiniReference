@@ -1,0 +1,16 @@
+<%= form_for @reference, class: 'form-horizontal' do |f| %>
+
+  <%= f.label :func, class: 'control-label', value: 'Function name (関数名)' %>
+  <%= f.text_field :func, class: 'form-control' %><br>
+
+  <%= f.label :usage_code, class: 'control-label', value: 'Usage code (一般的なコードの書き方)' %>
+  <%= f.text_area :usage_code, class: 'form-control' %><br>
+
+  <%= f.label :usage_description, class: 'control-label', value: 'Usage description (使い方の説明)' %>
+  <%= f.text_area :usage_description, class: 'form-control' %><br>
+
+  <%= f.label :category, class: 'control-label', value: 'Category (カテゴリー)' %>
+  <%= f.select :category, ['Initialize', 'GPIO Control', 'Other'], {}, class: 'form-control' %><br>
+
+  <%= f.submit 'Done!', class: 'btn btn-primary' %>
+<% end %>

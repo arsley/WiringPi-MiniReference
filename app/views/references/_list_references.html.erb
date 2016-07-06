@@ -1,0 +1,8 @@
+<table class="table">
+  <% references.each do |ref| %>
+    <tr>
+      <th><%= link_to ref.func, ref %></th>
+      <td><%= ref.category %></td>
+    </tr>
+  <% end %>
+</table>

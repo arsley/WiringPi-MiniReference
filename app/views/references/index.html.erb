@@ -1,0 +1,17 @@
+<div class="index_references">
+  <%= render 'page_notice' if notice %>
+
+  <div class="jumbotron">
+    <h2 class="text-left">References</h2>
+    <p class="lead">リファレンスの一覧ページです。</p>
+  </div>
+
+  <h3 class="text-left">Initialize (初期化, 基本)</h3>
+  <div class="ref_init"><%= render 'references/list_references', references: @references_i %></div>
+
+  <h3 class="text-left">GPIO Control (GPIO操作)</h3>
+  <div class="ref_gpio"><%= render 'references/list_references', references: @references_g %></div>
+
+  <h3 class="text-left">Other (その他)</h3>
+  <div class="ref_other"><%= render 'references/list_references', references: @references_o %></div>
+</div>

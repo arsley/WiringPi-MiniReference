@@ -1,0 +1,17 @@
+<div class="show_reference">
+  <%= render 'page_notice' if notice %>
+
+  <div class="jumbotron">
+    <h2 class="text-left"><%= @reference.func %></h2>
+    <%= simple_format(@reference.usage_description) %>
+  </div>
+  <div class="usage">
+    <h2 class="text=left">Usage (使い方)</h2>
+    <%= simple_format(@reference.usage_code, {}, wrapper_tag: 'pre') %>
+
+  </div>
+  <div class="to_otherpage">
+    <%= link_to 'Edit...', edit_reference_path(@reference), class: 'btn btn-warning' %>
+    <%= link_to 'Delete!', @reference, method: :delete, data: { comfirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="new_reference">
+  <div class="jumbotron">
+    <h2 class="text-left">New Reference</h2>
+    <p class="lead text-left">新しくリファレンスを作成します。</p>
+    <p class="lead text-left">書き方は既存のものを参考にしてください。</p>
+  </div>
+  <%= render 'references/error' if @reference.errors.any? %>
+  <%= render 'references/form' %>
+</div>

@@ -1,0 +1,8 @@
+<div class="edit_reference">
+  <div class="jumbotron">
+    <h2 class="text-left">Edit Reference</h2>
+    <p class="lead text-left">リファレンスを編集します。</p>
+  </div>
+  <%= render 'references/error' if @reference.errors.any? %>
+  <%= render 'references/form' %>
+</div>

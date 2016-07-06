@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  func: MyString
+  usage_code: MyString
+  usage_description: MyString
+
+two:
+  func: MyString
+  usage_code: MyString
+  usage_description: MyString
